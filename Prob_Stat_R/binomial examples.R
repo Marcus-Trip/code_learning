@@ -5,6 +5,7 @@
 # 1. Does this satisfy the binomial assumptions?
 
 # (1) An experiement with n identical trials. Yes., n=10 trials
+
 #     each customer is trail.
 
 # (2) The outcome of each trial has only 2 possbilities. Yes, 
@@ -26,7 +27,7 @@ pbinom(2,10,0.3)
 # 3. What is the probability that 7 or more order coffee?
 pbinom(6,10,0.3,lower.tail=FALSE) # Pr(X>6) = Pr(X>=7)
 
-# 4. What’s the probability that exactly 5 people order coffee?
+# 4. What is the probability that exactly 5 people order coffee?
 dbinom(5,10,0.3)
 
 # 5. How many of the 10 customers would you expect to order coffee?
