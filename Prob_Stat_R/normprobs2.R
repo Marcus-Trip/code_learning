@@ -53,6 +53,7 @@ qnorm(0.345/2,lower.tail=FALSE)
 qnorm(0.345/2)
 
 # + Pr(-c < Z < c) = 0.476
+1-0.476
 qnorm(0.524/2,lower.tail=FALSE)
 # check
 pnorm(0.6371917)-pnorm(-0.6371917)
