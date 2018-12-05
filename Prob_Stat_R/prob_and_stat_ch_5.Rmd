@@ -1,0 +1,15 @@
+---
+title: "Prob and Stat Hmwk ch6"
+author: "Marcus Hall"
+date: "Dec 3rd, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Pg. 415: 2,4,12
+
+Pg. 420: 2,12
+
+Pg. 425: 1,4,7,8

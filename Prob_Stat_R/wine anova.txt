@@ -1,0 +1,28 @@
+names(winee) <- make.names(names(winee))
+is.factor (winee$Wine)
+winee$Wine <- factor(winee$Wine)
+is.factor (winee$Wine)
+AnovaModel.1 <- aov(Ranking ~ Wine, data=winee)
+summary(AnovaModel.1)
+with(winee, numSummary(Ranking, groups=Wine, statistics=c("mean", "sd")))
+local({
+  .Pairs <- glht(AnovaModel.1, linfct = mcp(Wine = "Tukey"))
+  print(summary(.Pairs)) # pairwise tests
+  print(confint(.Pairs)) # confidence intervals
+  print(cld(.Pairs)) # compact letter display
+  old.oma <- par(oma=c(0,5,0,0))
+  plot(confint(.Pairs))
+  par(old.oma)
+})
+AnovaModel.2 <- aov(Ranking ~ Wine, data=winee)
+summary(AnovaModel.2)
+with(winee, numSummary(Ranking, groups=Wine, statistics=c("mean", "sd")))
+local({
+  .Pairs <- glht(AnovaModel.2, linfct = mcp(Wine = "Tukey"))
+  print(summary(.Pairs)) # pairwise tests
+  print(confint(.Pairs)) # confidence intervals
+  print(cld(.Pairs)) # compact letter display
+  old.oma <- par(oma=c(0,5,0,0))
+  plot(confint(.Pairs))
+  par(old.oma)
+})

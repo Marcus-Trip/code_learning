@@ -1,0 +1,107 @@
+---
+title: "Prob and Stat Hmwk ch6"
+author: "Marcus Hall"
+date: "Dec 3rd, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Pg. 407: 4,12,14
+
+4) 
+a) H0: p <= 2.5  H1: p>2.5
+Z = mean-mu_not/(sd/sqrt(n))
+```{r}
+(2.6-2.5)/(0.3/sqrt(50))
+``` 
+p-value = 0.0091
+
+b) 100- (p-value*100) =  99.09%
+
+12) p-value * 100 = 4 
+
+14)
+a) Two tailed
+b) H0: mu =73.5
+c) 0.196
+d) z=-1.80 
+    p-value = 0.0602
+e) 
+```{r}
+alpha = .99
+qnorm(abs(1-alpha/2),lower.tail = FALSE)
+```
+
+Pg. 415: 2,4,12
+
+2) True or False:
+a) If we reject H0, then we conclude that H0 is false.
+    False
+b) if we do not reject H0, then we conclude that H0 is true.
+    False
+c) if we reject H0, then we conclude that H1 is true.
+    True
+d) I we do not reject H0, then we conclude that H1 is false.
+    True
+
+4) If P=0.50, which is the best conclusion?
+        III: There is a a 50% probability that H0 is true
+
+12) A machine that fills cerceal boxes is supposed to be calibrated so that the mean
+fill weight is 12oz. Let u denote the true mean fill weight. Assume that in a test of
+of the hypotheses H0: u=12 versus H1: u =| 12, the P-value is 0.30.
+
+a. Should H0 be rejected on the basis of this test? Explain
+    Yes because its P high and its using a 2 tailed test so the true mean is quite far
+    the Null.
+    
+
+b. Can you conclude that the machine is calibrated to provide a mean fill weight of 12oz?
+Explain.
+    No, but you could say its close because the p-value is 0.30 which is means the fill weight
+    is probability just above 12oz 
+
+Pg. 420: 2,12
+
+2) Of 444 samples, 281 male and 163 female. Can you conclude that more than 60% of 
+    HIV+ smokers are male?
+        H0: p<=0.6 vs H1: p>0.6
+        P_hat=281/444 = 0.6328829
+        Sqrt((0.6)(1-0.6)/444) = 0.02324953
+        z=(0.6328829-.6)/0.02324953=1.414347
+        P-value=0.0793
+        With 92% confidence, yes.
+
+12) a) two tailed because the null is just equal to
+    b) H0: p = 0.4
+    c) no, because the p-value is lower
+    d) 
+    e) 
+    f) 
+
+Pg. 425: 1,4,7,8
+
+4) 
+a) H0: p = .23  H1: p=|.23
+b) 
+```{r}
+(.232-.23)/(0.2/sqrt(9))
+```
+0.01 < p < 0.02
+
+c) Probly not, the p-value is less than 0.05, therefore H0 is rejected.
+
+
+8)
+a) H0: p <= 85  H1: p>85
+b) 
+```{r}
+(90.55-85)/(2.901551/sqrt(5))
+```
+0.001 < p < 0.005
+
+c) Yes, it should be accepted
+
+
