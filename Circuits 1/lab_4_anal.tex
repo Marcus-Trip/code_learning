@@ -1,0 +1,97 @@
+\documentclass{article}
+
+
+
+\begin{document}
+
+All of the measurements were with in the error rang of $\pm 10\%$. The greatest resistor error was resistor number two which had a error of $3.617\%$. Finding resistors that had close to true values was hard. The greatest voltage error was the voltage at node 2 with and error of $7.955\%$. The most likely reason is that it is the farthest from the voltage supply, so the error in the resistor would combine resulting in a greater error. Current number seven was the greatest off and was most likely due to the use of two voltage sources to get the right amount of current moving through the circuit. Resistor number one had the greatest error in ``Power Absorbed'' this was due to the finicky current source. 
+
+\begin{table}[h]
+\begin{center}
+\label{code:resis}
+\caption{Resistor Values}
+\begin{tabular}{c|c|c|c}
+Element & Calculated/Nominal Values & Measure Values & Percent Differences 
+\\\hline
+$R_1$ & $220\Omega$ & $223\Omega$ & 1.3636\%  \\
+$R_2$ & $470\Omega$ & $453\Omega$ & 3.6170\%  \\
+$R_3$ & $680\Omega$ & $669\Omega$ &  1.6176\%  \\
+$R_4$ & $680\Omega$ & $676\Omega$ &  0.5882\%  \\
+$R_5$ & $1500\Omega$ & $1486\Omega$ & 0.9333 \%  \\
+$R_6$ & $330\Omega$ & $335\Omega$ &  1.5151\%  \\
+$R_7$ & $1000\Omega$ & $965\Omega$ &  3.500\%  \\
+
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\label{code:resis}
+\caption{Node Voltages}
+\begin{tabular}{c|c|c|c}
+Element & Calculated/Nominal Values & Measure Values & Percent Differences 
+\\\hline
+$V_1$ & 15.990 [V] & 15.478 [V] & 3.202\% \\
+$V_2$ & 12.470 [V] & 11.478 [V] &  7.955\% \\
+$V_3$ & 14.104 [V] & 13.897 [V] &  1.467\% \\
+$V_4$ & 18.00   [V] & 18.032 [V] & 0.1777 \% \\
+$V_S$ & 18.00   [V] & 18.034 [V] &  0.1888\% \\
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\label{code:resis}
+\caption{Branch Currents}
+\begin{tabular}{c|c|c|c}
+Element & Calculated/Nominal Values & Measure Values & Percent Differences 
+\\\hline
+$I_1$ & 16.00 [mA] & 15.307 [mA] & 4.331 \% \\
+$I_2$ & 26.5319 [mA] & 26.36 [mA] & 0.6497 \% \\
+$I_3$ & -2.402 [mA] & -2.428 [mA] & 1.082\% \\
+$I_4$ & -8.131 [mA] & -8.167 [mA] & 0.4427\% \\
+$I_5$ & 9.402 [mA] & 9.394 [mA] & 0.08509\% \\
+$I_6$ & 11.806 [mA] & -11.607 [mA] & 1.685\% \\
+$I_7$ & 18.00 [mA] & 18.664 [mA] & 3.688 \% \\
+$I_S$ & 16.00 [mA] & 15.979 [mA] & 0.1312 \% \\
+$I_Vs$ & -37.936  [mA] & 38.59 [mA] &  1.723\% 
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\label{code:power}
+\caption{Power Absorbed}
+\begin{tabular}{c|c|c|c}
+Element & Calculated/Nominal Values & Measure Values & Percent Differences 
+\\\hline
+$R_1$	&	56.32	[mW] &	52.250	[mW] &	7.2268	\% \\
+$R_2$	&	330.8	[mW] &	314.767	[mW] &	4.8468	\% \\
+$R_3$	&	3.924	[mW] &	3.944	[mW] &	0.5066	\% \\
+$R_4$	&	44.959	[mW] &	45.089	[mW] &	0.2894	\% \\
+$R_5$	&	132.6	[mW] &	131.135	[mW] &	1.1045	\% \\
+$R_6$	&	45.996	[mW] &	45.132	[mW] &	1.8784	\% \\
+$R_7$	&	324	[mW] &	336.153	[mW] &	3.7509	\% \\
+$I_s$	&	-255.85	[mW] &	-247.323	[mW] &	3.3328	\% \\
+$V_s$	&	-682.8	[mW] &	-695.932	[mW] &	1.9233	\% 
+
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+
+
+\end{document}
