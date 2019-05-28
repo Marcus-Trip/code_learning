@@ -1,0 +1,35 @@
+\documentclass{article}
+
+
+
+\begin{document}
+
+
+\begin{table}[h]
+\begin{center}
+\label{code:resis}
+\caption{Measured Gain Values}
+\begin{tabular}{c|c|c|c}
+Variable & Measured Gain Value $A_{v,x}$ & $A_{v,e}$ & Percent Differences 
+\\\hline
+$A_{v,a}$ & $-6.92$ & $-6.583$ & 5.119\%  \\
+$A_{v,b}$ & $-5.64$ & $-6.583$ & 14.3248\%  \\
+$A_{v,c}$ & $-6.714$ & $-6.583$ & 1.98997\%  \\
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+Part B had high enough voltages that clipping occurred resulting in the amplification 
+
+
+$$V_{m,max,exp} = 2.105$$
+$$V_{m,max}= 2.25V$$
+A large contribution to why this could be lower is that the resistor $R_f$ was lower than expected. It was the best one to be found.
+
+
+The $V_o(t)$ for the first and third setup were close to predicted, but the second was very far off. The predicted value for $V_o(t)$ is $-6.666$, were the second setup had a $V_o(t)$ magnitude of $-16.4575$. 
+
+The assumption that it is an ideal op-amp is a ok one. There a a few inconsistencies here or there but for the most part it would work. Most of the errors are with in 10\% meaning predictability is consistent.
+\end{document}
